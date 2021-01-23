@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEB1 - JavaScript</title>
+
+    <style>
+        .js{
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1><a href="">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'night'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value = 'day';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length) {
+                console.log(alist[i]);
+                alist[i].style.color = 'blue';
+                i = i + 1;
+            }
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value = 'night';
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while(i < alist.length) {
+                console.log(alist[i]);
+                alist[i].style.color = 'powderblue';
+                i = i + 1;
+            }
+        }    
+    ">
+    <ol>
+        <li><a href="">HTML</a></li>
+        <li><a href="">CSS</a></li>
+        <li><a href="">JavaScript</a></li>
+    </ol>
+
+    
+
+    <span class="js">Javascript</span>
+
+    <p>
+        Javascript often abbreviated as JS, is high-level, dynamic, 
+        weakly typed, prototype-based, multi-paradigm, and interpreted
+        programming language. Alongside HTMl and CSS, Javascript is one
+        of the three core technologies of World Wide Web content production.
+        It is used to make webpages interactive and provide online programs, 
+        including video games. The majority of websites employ it, and all modern web browsers.
+    </p>
+    
+</body>
+</html>
